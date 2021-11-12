@@ -15,6 +15,7 @@ h2{
 }
 header{
     position: relative;
+    margin-bottom: 20vh;
 }
 header > .row{
     position: absolute;
@@ -67,4 +68,75 @@ header > .row{
 #myVideo {
     width: 100%;
     z-index: -1;
-  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+  flex: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .price-header {
+  background-color: #a70000;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #111;
+  font-size: 20px;
+  color:#fff;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #a70000;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.hinnakiri{
+    margin-bottom: 20vh;
+}
+.hinnakiri h1, .kluubid h1{
+    text-align: center;
+}
+.kluubid h1{
+    background-color: #a70000;
+    margin: 0;
+    color: #fff;
+}
