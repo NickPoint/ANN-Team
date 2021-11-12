@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Righteous&display=swap');
 body{
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
 }
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'Righteous', cursive;
 }
@@ -12,18 +14,24 @@ h2{
     font-size: 35px;
 }
 header{
-    
+    position: relative;
+}
+header > .row{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+    width: 90%;
 }
 .row {
     display: flex;
-    margin: 0 5vw;
 }
 #col_1_header{
-    flex:30%;
+    flex:40%;
 }
 #col_2_header{
     display: flex;
-    flex: 70%;
+    flex: 60%;
     justify-content: flex-end;
 }
 .site-title, .site-description{
@@ -57,10 +65,6 @@ header{
 }
 
 #myVideo {
-    position: fixed;
-    right: 0;
-    top: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
     z-index: -1;
   }
