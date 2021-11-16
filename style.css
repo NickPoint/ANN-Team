@@ -31,9 +31,12 @@ header > .row{
 }
 .row {
     display: flex;
+    align-items: center;
 }
 #col_1_header{
     flex:40%;
+    display: flex;
+    align-items: center;
 }
 #col_2_header{
     display: flex;
@@ -43,6 +46,12 @@ header > .row{
 .site-title, .site-description{
     margin: 0;
     color:#ffffff;
+}
+.site-description-footer, .site-title-footer{
+    margin:0;
+}
+.site-description-footer{
+    font-size: 15px;
 }
 .site-description{
     font-size: 15px;
@@ -73,6 +82,7 @@ header > .row{
 #myVideo {
     width: 100%;
     z-index: -1;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 * {
@@ -81,14 +91,14 @@ header > .row{
 
 /* Create three columns of equal width */
 .columns {
-  flex: 33.3%;
-  padding: 8px;
+    flex: 33.3%;
+    padding: 8px;
 }
 
 /* Style the list */
 .price {
   list-style-type: none;
-  border: 1px solid #eee;
+  box-shadow: 0 0 8px 1px rgba(20, 20, 20, 0.8);
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
@@ -97,7 +107,9 @@ header > .row{
 
 /* Add shadows on hover */
 .price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+  transform: scale(1.15);
+  z-index: 2;
 }
 
 /* Pricing header */
@@ -110,9 +122,9 @@ header > .row{
 
 /* List items */
 .price li {
-  border-bottom: 1px solid #eee;
   padding: 20px;
   text-align: center;
+  background-color: #fff;
 }
 
 /* Grey list item */
@@ -124,6 +136,7 @@ header > .row{
 
 /* The "Sign Up" button */
 .button {
+    transition: 0.3s;
   background-color: #a70000;
   border: none;
   color: white;
@@ -133,9 +146,11 @@ header > .row{
   font-size: 18px;
   font-weight: 700;
 }
-
+.button:hover{
+    background-color: #000;
+}
 .hinnakiri{
-    margin-bottom: 20vh;
+    margin: 0 5vw 20vh;
 }
 .hinnakiri h1, .kluubid h1{
     text-align: center;
@@ -144,4 +159,23 @@ header > .row{
     background-color: #a70000;
     margin: 0;
     color: #fff;
+}
+.site-info-footer{
+    color:black;
+}
+
+#col-1-footer, #col-2-footer, #col-3-footer{
+    flex: 33.3%;
+    text-align: center;
+}
+.kluubid{
+
+}
+footer{
+    margin: 7vh 5vw;
+}
+#col-2-footer input{
+    display: block;
+    margin-right: 10px;
+    font-family: 'Quicksand', sans-serif;
 }

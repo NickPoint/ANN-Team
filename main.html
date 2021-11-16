@@ -8,7 +8,7 @@
     <body>
         <header>
             <div class="row" style="align-items: center;">
-                <div id="col_1_header" style="display: flex; align-items: center;">
+                <div id="col_1_header">
                     <img class="site-logo" src="logo.png">
                     <div class="site-info">
                         <h2 class="site-title">ANN-Team</h2>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <video autoplay muted loop id="myVideo">
-                <source src="background.mp4" type="video/mp4">
+                <source src="video.mp4" type="video/mp4">
             </video>
         </header>
         <main>
@@ -54,7 +54,7 @@
                             <li>&nbsp;</li>
                             <li><a href="#" class="button">Liituda</a></li>
                           </ul>
-                      </div> 
+                      </div>
                       <div class="columns">
                           <ul class="price">
                             <li class="price-header">Tudengi pakett</li>
@@ -73,7 +73,29 @@
             </div>
         </main>
         <footer>
-
+            <div class='row'>
+                <div id='col-1-footer'>
+                    <img src="logo.png" style="width: 150px;">
+                    <div class="site-info-footer">
+                        <h2 class="site-title-footer">ANN-Team</h2>
+                        <p class="site-description-footer">Fun site</p>
+                    </div>
+                </div>
+                <div id='col-2-footer'>
+                    <h3>Võtke ühendust meiega</h3>
+                    <form style="display:flex">
+                        <input type="email" id='email' placeholder="info@ann.team">
+                        <input type="tel" id='tel' placeholder="+372 XXXX XXXX">
+                        <input type="text" id="text" placeholder="Küsige siit">
+                        <input class="button" type="submit" value="Saada">
+                    </form>
+                </div>
+                <div id='col-3-footer'>
+                    <h3>Jälgi meid</h3>
+                    <img width="32px" src="facebook.png">
+                    <img width="32px" src="instagram.png">
+                </div>
+            </div>
         </footer>
     </body>
 </html>
