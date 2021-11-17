@@ -1,2 +1,0 @@
-# ANN-Team
-Jõusaali veebileht
