@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Galerii</title>
+        <link rel="stylesheet" href=Galerii\style.css>
+    </head>
+    <body>
+        
+        <header>
+            <div class="row" style="align-items: center;">
+                <div id="col_1_header" style="display: flex; align-items: center;">
+                    <img class="site-logo" src="logo.png">
+                    <div class="site-info">
+                        <h2 class="site-title">ANN-Team</h2>
+                        <p class="site-description">Fun site</p>
+                    </div>
+                </div>
+                <div id="col_2_header">
+                    <nav class="nav-bar">
+                        <ul class="nav-items">
+                            <a href="main.html"><li class="nav-item">Avaleht</li></a>
+                            <a href="Kontaktid.html"><li class="nav-item">Kontaktid</li></a>
+                            <li class="nav-item">Liitumine</li>
+                            <li class="nav-item">Hinnakiri</li>
+                            <a href="Galerii.html"><li class="nav-item">Galerii</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <base href="scale_1200.png">
+            <script>
+                var angle = 0;
+                function galleryspin(sign) { 
+                    spinner = document.querySelector("#spinner");
+                    if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+                    spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+                }           
+            </script>
+                
+            <div id="carousel">
+                <figure id="spinner">
+                    <img src="Galerii\5dfd970d4e6ab7555e66d51c5e83701d--powerlifting-gym-gym-interior.jpg">
+                    <img src="Galerii\867A5930.jpg">
+                    <img src="Galerii\crossfit-zone.jpg">
+                    <img src="Galerii\e0643864469e5d5943c86cbd62b781e1.jpg">
+                    <img src="Galerii\revive-md-chris-bumstead-gym.jpg">
+                    <img src="Galerii\ronnie_coleman_migfu0.jpg">
+                    <img src="Galerii\733040920c2a729b9e31076d349b803b.jpg">
+                    <img src="Galerii\GettyImages-855032110-1600x1061.jpg">
+                </figure>
+                <span class="ss-icon" onclick="galleryspin('')">&lt;</span>
+                <span class="ss-icon" onclick="galleryspin('-')">&gt;</span> 
+            </div>
+            
+        </main>
+
+    </body>
+</html>

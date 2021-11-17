@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kontaktid</title>
+        <link rel="stylesheet" href=Kontaktid\style.css>
+    </head>
+    
+    <body>
+      <header>
+            <div class="row" style="align-items: center;">
+                <div id="col_1_header" style="display: flex; align-items: center;">
+                    <img class="site-logo" src="logo.png">
+                    <div class="site-info">
+                        <h2 class="site-title">ANN-Team</h2>
+                        <p class="site-description">Fun site</p>
+                    </div>
+                </div>
+                <div id="col_2_header">
+                    <nav class="nav-bar">
+                        <ul class="nav-items">
+                          <a href="main.html"><li class="nav-item">Avaleht</li></a>
+                          <a href="Kontaktid.html"><li class="nav-item">Kontaktid</li></a>
+                          <li class="nav-item">Liitumine</li>
+                          <li class="nav-item">Hinnakiri</li>
+                          <a href="Galerii.html"><li class="nav-item">Galerii</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+          
+          <div class="row">
+            
+            <div class="column">
+              <div class="item">
+                <div class="portrait" id="Nikita2"></div>
+                <div class="details">
+                  <h3 class="name">Nikita Kislõi</h3>
+                  <p class="description">Peatreener</p>
+                </div>
+              </div>
+                
+              <div class="item">
+                <div class="portrait" id="Artur"></div>
+                <div class="details">
+                  <h3 class="name">Artur Hendrik Mägi</h3>
+                  <p class="description">Finantsjuht</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="portrait" id="Nikita1"></div>
+                <div class="details">
+                  <h3 class="name">Nikita Voevudsky</h3>
+                  <p class="description">Juhataja</p>
+                </div>
+              </div>
+            </div>
+           
+            <div class="column">
+              <div class="container">  
+                <form id="contact" action="" method="post">
+                  <h3>Võtke ühendus meiega!</h3>
+                  <h4>Vastame võimalikult kiiresti!</h4>
+                  <fieldset>
+                    <input placeholder="Eesnimi/Perekonnanimi" type="text" tabindex="1" required autofocus>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Teie e-mail" type="email" tabindex="2" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Teie telefoninumber" type="tel" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                    <textarea placeholder="Teie probleem..." tabindex="5" required></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Saada!</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </main>
+    </body>    
+</html>
