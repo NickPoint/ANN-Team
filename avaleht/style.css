@@ -28,6 +28,7 @@ header > .row{
     top: 0;
     transform: translate(-50%);
     width: 90%;
+    z-index: 1;
 }
 .row {
     display: flex;
@@ -74,7 +75,23 @@ header > .row{
     list-style: none;
     float: left;
     margin-right: 20px;
+    transition: 0.3s;
 }
+
+.nav-item a{
+    text-decoration: none;
+    color:#fff;
+    transition: 0.3s;
+}
+
+.nav-item a:hover{
+    color: #a70000;
+}
+
+.nav-item:hover{
+    transform: scale(1.1);
+}
+
 .nav-item:nth-child(5){
     margin: 0;
 }
@@ -167,9 +184,6 @@ header > .row{
 #col-1-footer, #col-2-footer, #col-3-footer{
     flex: 33.3%;
     text-align: center;
-}
-.kluubid{
-
 }
 footer{
     margin: 7vh 5vw;
