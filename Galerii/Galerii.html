@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ee">
     <head>
         <title>Galerii</title>
         <link rel="stylesheet" href=style.css>
+        <meta charset="UTF-8">
     </head>
     <body>
         
         <header>
             <div class="row" style="align-items: center;">
                 <div id="col_1_header" style="display: flex; align-items: center;">
-                    <img class="site-logo" src="logo.png">
+                    <img class="site-logo" src="logo.png" alt="">
                     <div class="site-info">
                         <h2 class="site-title">ANN-Team</h2>
                         <p class="site-description">Fun site</p>
@@ -20,8 +21,6 @@
                         <ul class="nav-items">
                             <li class="nav-item">Avaleht</li>
                             <li class="nav-item">Kontaktid</li>
-                            <li class="nav-item">Liitumine</li>
-                            <li class="nav-item">Hinnakiri</li>
                             <li class="nav-item">Galerii</li>
                         </ul>
                     </nav>
@@ -29,9 +28,15 @@
             </div>
         </header>
         <main>
-            <base href="scale_1200.png">
             <script>
                 var angle = 0;
+                /* JavaScript
+                Järgmine funktsioon kontrollib nuppu vajutust
+                Kui vasak nupp on vajutatud, siis töötab else tingimus ning lahutame muutujast "angle" 45 kraadi,
+                selleks, et pöörata vasakule pildile
+                Kui parem nupp on vajutatud, siis töötab if tingimus ning liidame muutujale "angle" 45 kraadi,
+                selleks, et pöörata paremale pildile
+                Pärast funktsioon leiab muutujat id-ga "spinner" ja annab atribuuti "transform: rotateY("angle"deg);" */
                 function galleryspin(sign) { 
                     spinner = document.querySelector("#spinner");
                     if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
@@ -41,14 +46,15 @@
                 
             <div id="carousel">
                 <figure id="spinner">
-                    <img src="5dfd970d4e6ab7555e66d51c5e83701d--powerlifting-gym-gym-interior.jpg">
-                    <img src="867A5930.jpg">
-                    <img src="crossfit-zone.jpg">
-                    <img src="e0643864469e5d5943c86cbd62b781e1.jpg">
-                    <img src="revive-md-chris-bumstead-gym.jpg">
-                    <img src="ronnie_coleman_migfu0.jpg">
-                    <img src="733040920c2a729b9e31076d349b803b.jpg">
-                    <img src="GettyImages-855032110-1600x1061.jpg">
+                    <img src="5dfd970d4e6ab7555e66d51c5e83701d--powerlifting-gym-gym-interior.jpg" alt="">
+                    <img src="867A5930.jpg" alt="">
+                    <img src="crossfit-zone.jpg" alt="">
+                    <img src="e0643864469e5d5943c86cbd62b781e1.jpg" alt="">
+                    <img src="revive-md-chris-bumstead-gym.jpg" alt="">
+                    <img src="ronnie_coleman_migfu0.jpg" alt="">
+                    <img src="733040920c2a729b9e31076d349b803b.jpg" alt="">
+                    <img src="GettyImages-855032110-1600x1061.jpg" alt="">
+                    <img src="scale_1200.png" alt="">
                 </figure>
                 <span class="ss-icon" onclick="galleryspin('')">&lt;</span>
                 <span class="ss-icon" onclick="galleryspin('-')">&gt;</span> 
