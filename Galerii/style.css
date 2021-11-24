@@ -61,6 +61,16 @@ header{
   float: left;
   margin-right: 20px;
 }
+
+.nav-item a{
+  text-decoration: none;
+  color:#fff;
+  transition: 0.3s;
+}
+
+.nav-item a:hover{
+  color: #a70000;
+}
 .nav-item:nth-child(5){
   margin: 0;
 }
