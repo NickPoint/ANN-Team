@@ -1,26 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Righteous&display=swap');
-
-::-webkit-scrollbar {
-    width: 0;
-}
-
-body{
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Righteous', cursive;
-}
-h1{
-    font-size: 50px;
-}
-h2{
-    font-size: 35px;
-}
 header{
     position: relative;
-    margin-bottom: 20vh;
+    margin: 0 0 20vh;
 }
 header > .row{
     position: absolute;
@@ -30,80 +10,11 @@ header > .row{
     width: 90%;
     z-index: 1;
 }
-.row {
-    display: flex;
-    align-items: center;
-}
-#col_1_header{
-    flex:40%;
-    display: flex;
-    align-items: center;
-}
-#col_2_header{
-    display: flex;
-    flex: 60%;
-    justify-content: flex-end;
-}
-.site-title, .site-description{
-    margin: 0;
-    color:#ffffff;
-}
-.site-description-footer, .site-title-footer{
-    margin:0;
-}
-.site-description-footer{
-    font-size: 15px;
-}
-.site-description{
-    font-size: 15px;
-}
-.site-logo{
-    width: 150px;
-    margin-right: 25px;
-}
-.nav-bar{
-    border-bottom: 2px solid #a70000;
-}
-.nav-items{
-    display: flex;
-    padding: 0;
-    font-size: 20px;
-    color:#ffffff;
-}
-.nav-item{
-    display: inline;
-    list-style: none;
-    float: left;
-    margin-right: 20px;
-    transition: 0.3s;
-}
-
-.nav-item a{
-    text-decoration: none;
-    color:#fff;
-    transition: 0.3s;
-}
-
-.nav-item a:hover{
-    color: #a70000;
-}
-
-.nav-item:hover{
-    transform: scale(1.1);
-}
-
-.nav-item:nth-child(5){
-    margin: 0;
-}
 
 #myVideo {
     width: 100%;
     z-index: -1;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /* Create three columns of equal width */
@@ -152,20 +63,7 @@ header > .row{
 }
 
 /* The "Sign Up" button */
-.button {
-    transition: 0.3s;
-  background-color: #a70000;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 700;
-}
-.button:hover{
-    background-color: #000;
-}
+
 .hinnakiri{
     margin: 0 5vw 20vh;
 }
@@ -176,20 +74,4 @@ header > .row{
     background-color: #a70000;
     margin: 0;
     color: #fff;
-}
-.site-info-footer{
-    color:black;
-}
-
-#col-1-footer, #col-2-footer, #col-3-footer{
-    flex: 33.3%;
-    text-align: center;
-}
-footer{
-    margin: 7vh 5vw;
-}
-#col-2-footer input{
-    display: block;
-    margin-right: 10px;
-    font-family: 'Quicksand', sans-serif;
 }
