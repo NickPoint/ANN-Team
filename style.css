@@ -27,10 +27,11 @@ header{
 
 .row {
   display: flex;
+  align-items: center;
 }
 #col_1_header{
   display: flex;
- align-items: center;
+  align-items: center;
   flex:40%;
 }
 #col_2_header{
