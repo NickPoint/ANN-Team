@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ee">
+    <head>
+        <title>Teenused</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href=style.css>
+        <link rel="stylesheet" href=Teenused/teenused.css>
+    </head>
+    <body>
+        
+        <header>
+            <div class="row" style="align-items: center;">
+                <div id="col_1_header">
+                    <img class="site-logo" src="logo.png" alt="">
+                    <div class="site-info">
+                        <h2 class="site-title">ANN-Team</h2>
+                        <p class="site-description">Fun site</p>
+                    </div>
+                </div>
+                <div id="col_2_header">
+                    <nav class="nav-bar">
+                        <ul class="nav-items">
+                            <li class="nav-item"><a href="main.html">Avaleht</a></li>
+                            <li class="nav-item"><a href="Kontaktid.html">Kontaktid</a></li>
+                            <li class="nav-item"><a href="Galerii.html">Galerii</a></li>
+                            <li class="nav-item"><a href="teenused.html">Teenused</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="item">
+                <h2>Rühmatreening</h2>
+                <h3>Kas harjutamine koos teistega on Sinu jaoks innustav? Otsid põnevaid, vaheldusrikkaid ja meeleolukaid võimalusi 
+                    treenimiseks? Kui vastuseks on jah, siis kutsume Sind leidma meie rühmatreeningute valikust oma uusi lemmikuid.</h3>
+                <h2>Jõusaal</h2>
+                <h3>Meie spordiklubis on hästivarustatud jõusaal, kust leiate suurepärase valiku kardiomasinaid,  
+                    vabaraskuste ala, funktsionaalse ala ja venitusala.</h3>
+                <h2>Ujula</h2>
+                <h3>Ujumisbassein suurusega 10m x 25m, sügavus 0,9-1,6m, vee temperatuur orienteeruvalt 28C°<br>
+                    Lastebassein suurusega 2,5m x 10m, sügavus 0,5-0,9m, vee temperatuur orienteeruvalt 32C°<br>
+                    Mullivann kuni 5 inimest, vee temperatuur orienteeruvalt 34C°</h3>
+                <h2>Saun</h2>
+                <h3>Saunamõnusid on võimalik nautida nii sisesaunas kui ka välisaunas.</h3>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="Teenused/rühm.jpg" alt="Rühmatreening" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="Teenused/jõuks.jpg" alt="Jõusaal" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="Teenused/ujula.jpg" alt="Ujula" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="Teenused/saun.jpg" alt="Saun" onclick="myFunction(this);">
+                </div>
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" alt="Error" style="width: 100%;">
+                <div id="imgtext"></div>
+            </div>
+        </main>
+        <script src="Teenused/teenused.js"></script>
+    </body>
+</html>
